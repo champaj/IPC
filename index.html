@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPC India &#8211; Association Connecting Electronics Industries</title>
+    <link rel="icon" href="IPC-favicon.jpg" type="image/gif" sizes="48x48">
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.right {
+  background-color: #f1f1f1;
+  padding: 20px;
+  float: right;
+  width: 25%; /* The width is 25%, by default */
+}
+.center {
+  margin: auto;
+  width: 3%;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 6px; 
+}
+.left {
+  background-color: #fff;
+  padding: 20px;
+  float: left;
+  width: 75%; /* The width is 20%, by default */
+}
+.heading {
+    font-family:poppins; 
+    font-size: 24px;
+    color: #f5b904;
+    margin: 10px;
+    /* float: left; */
+    text-align: left;    
+}
+
+p { 
+    font-size: 18px;
+    color: rgb(46, 46, 46);
+    margin: 10px;
+    float: left;
+    text-align: justify;
+    line-height: 1.5;    
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+/* Having style for Table */
+#customers {
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  color: rgb(46, 46, 46);
+}
+
+#customers tr:nth-child(even){background-color: #fff; text-align: center;}
+
+#customers tr:hover {background-color: #f1f1f1;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color:#f5b904;
+  color: rgb(46, 46, 46);
+}
+
+/* Text wrap around images  */
+
+#textwrap {
+  float: right;
+}
+
+/* Social Media Icon */
+
+.a {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px; 
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px rgb(146, 146, 146);
+  transition: 0.4s;
+}
+
+.a:hover {background-color: #0A66C2;box-shadow: 0 5px rgb(2, 0, 36);}
+
+.a:active {
+  background-color: #0A66C2;
+  box-shadow: 0 5px rgb(4, 0, 58);
+  transform: translateY(4px);
+}
+
+.readmore {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+  background-color: #041c3f;
+  padding: 15px;
+  border-radius: 1px; 
+  text-align: center;
+  cursor: pointer;
+  box-shadow:-4px 0px #ffba00;
+  transition: 0.3s;
+}
+
+.readmore:hover {background-color: #000;box-shadow: -10px 0px #ffba00;padding:15px 25px;}
+
+.readmore:active {
+  background-color: #000;
+  box-shadow:1px 0px #ffcd44;
+  transform: translateY(4px);
+}
+
+#in {
+  text-decoration: none;
+
+}
+
+
+</style>
+
+
+
+</head>
+
+<body style="font-family: poppins, Arial, Helvetica, sans-serif;" >
+
+<div style="align-items: center;">
+    <img src="https://1.bp.blogspot.com/-6HVt01uYFNg/YN6f3JL7j_I/AAAAAAAAPMw/bJmyh89Pw5oRm0YLBl48gtqf4IL8jEm5gCLcBGAsYHQ/s16000/june2021.jpg" alt="june2021" style="align-items: center; float:center;width:100%;height:100%;">
+
+    <div class="left">  
+        <h3 class="heading">IPC INDIA UPCOMING EVENTS</h3>
+    </div>
+  
+
+    <div class="left">
+        <img src="https://1.bp.blogspot.com/-O0RbJ6QWVzA/YN6f2OWxG3I/AAAAAAAAPMk/615JhMhX_ickvK28m43M8DMM8Fo1cp_WwCLcBGAsYHQ/s16000/Quizbanner6.jpg" alt="Quizbanner6"style=" float:left;width:100%;height:100%;margin-bottom : 20px; ">
+        <img src="https://1.bp.blogspot.com/-JOCa6rAAPEE/YN6f0wNspnI/AAAAAAAAPMQ/KAcLbmCr-7onyXB2QpmDrUVWFqoJXfhAQCLcBGAsYHQ/s16000/Etextile.png" alt="Etextile Webinar"style="float:left;width:100%;height:100%;margin-bottom : 20px;">
+        <img src="https://1.bp.blogspot.com/-gNmvjjHAPFw/YN6f3dag1nI/AAAAAAAAPM4/eyST_fQKAGMEoqKu1_5iMgKapFqQX9RVQCLcBGAsYHQ/s16000/medical%2Bbanner.jpg" alt="Medical Webinar"style="float:left;width:100%;height:100%;">
+        
+        <div class="left">
+        <h3 class="heading ">COURSES PLANNED FOR JULY 2021</h3>
+    </div>
+    <div>
+            <table id="customers">
+                <thead>
+                         <tr>							
+                                <th><center>COURSE</center></th>
+                                <th><center>ENDORSEMENT PROGRAM</center></th>
+                                <th style="padding:0 20px;"><center>DATE</center></th>
+                                <th><center>MODE OF TRAINING</center></th>
+                        </tr>                         
+                </thead>
+            <tbody>
+                   <tr> 
+                        <td>	IPC-A-610 H CIS/CIT </td>
+                        <td>	Acceptability of Electronic Assembly </td>
+                        <td>	05 - 08 </td>
+                        <td>	Instructor Led Virtual </td>
+                   </tr>
+                   <tr> 
+                        <td>	IPC/WHMA-A-620 D CIS/CIT </td>
+                        <td>	Acceptance for cable and wire Harness Assemblies </td>
+                        <td>	05 - 09 </td>
+                        <td>	Instructor Led Virtual/Classroom Live (Optional - Hands on Practical Session) </td>
+                  </tr>
+                  <tr> 
+                        <td>	IPC-7711/21 C CIS/CIT </td>
+                        <td>	Rework, Modification and Repair of Electronic Assemblies </td>
+                        <td>	05 - 09 </td>
+                        <td>	Classroom (Live training) with Hands on Practical Session/Bangalore Skill center </td>
+                  </tr>
+                  <tr> 
+                        <td>	IPC-A-610 H CIS/CIT </td>
+                        <td>	Acceptability of Electronic Assembly </td>
+                        <td>	13 - 16 </td>
+                        <td>	Instructor Led Virtual </td>
+                  </tr>
+                   <tr> 
+                        <td>	IPC-A-600 K CIS/CIT </td>
+                        <td>	Acceptability of Printed Boards </td>
+                        <td>	19 - 21 </td>
+                        <td>	Instructor Led Virtual </td>
+                  </tr>  
+                  <tr> 
+                    <td>	IPC-A-610 H CIS/CIT </td>
+                    <td>	Acceptability of Electronic Assembly </td>
+                    <td>	22 - 26 </td>
+                    <td>	Instructor Led Virtual </td>
+                  </tr>  
+                  <tr> 
+                    <td>	IPC J-STD-001 H CIS/CIT </td>
+                    <td>	Requirements for Soldered Electrical and Electronic Assemblies </td>
+                    <td>	26 - 30 </td>
+                    <td>	Instructor Led Virtual/Hands on Practical Session/ Bangalore Skill center </td>
+                  </tr> 
+                  <tr> 
+                    <td>	IPC-CID (Basic) </td>
+                    <td>	PCB Designer - Individual </td>
+                    <td>	28 - 30 </td>
+                    <td>	Instructor Led Virtual </td>
+                  </tr>  
+                </tbody>
+    </table>
+    </div>
+
+  <div class="left">  
+      <h3 class="heading">IPC INDIA JUNE EVENTS</h3>
+  </div>
+
+    <div>  
+        <p><img id="textwrap" src="https://1.bp.blogspot.com/-tOJv0eqZIrM/YN6f1pfGYlI/AAAAAAAAPMc/uKErXrqXrbkV1kVuL8AZALEhfvOVk1AegCLcBGAsYHQ/s16000/Importance%2Bof%2BDesign.jpeg" alt="May 4" style="margin-left: 20px; width: 700px;height: 350px;">
+          <strong style="color: #041c3f;"> June 9</strong> – IPC India Organize a webinar on Importance of Design in Electronics Manufacturing and highlighted the global electronics design standards developed for the assembly – interfaces – printed board industry. Thanks to Mr. Amba Prasad (IPC Trainer for Designer Certification Program) for his valuable insight & presentation. Webinar is attended by 100+ Member staffs involved in design participated from India, Bangladesh, Sri Lanka, Philippines, Saudi Arabia & UAE. </p>        
+    </div>
+
+
+
+    <div>  
+      <p style="background-color: #f1f1f1; padding: 20px"><img id="textwrap" src="https://1.bp.blogspot.com/-egLjjHIiLQk/YN6f0iGGZ_I/AAAAAAAAPMI/SMcan778GCEJah5DwiUexMXNgglnIGuGwCLcBGAsYHQ/s16000/30junepicture1.jpg" alt="30 june" style="margin-left: 20px; width: 680px;height: 600px;">
+        <strong style="color: #041c3f;"> June 30</strong> - IPC India Regional Webinar on “Workforce Training Overview” highlighted launch of two new courses for Operator/Newcomers - Electronics Assembly for Operator (EAO) & Wire Harness Assembly Operator (WHO). The Instructor Led courses will be organized through virtual & live mode in the region. IPC India will be connecting with Govt Organizations & Technical Institutes for implementing this course for students in final year of electronics. Skill development is an important driver to address improving employability, productivity and inclusive growth.</i> </p>        
+    </div>
+    
+  <div class="left">
+    <h3 style="font-size: 24px; color: #f5b904;">COURSES CONDUCTED DURING JUNE 2021</h3>
+  </div>
+
+    <div >
+      <div>
+      <img src="https://1.bp.blogspot.com/-RZigEJYUqUk/YN6f2RT1BlI/AAAAAAAAPMo/IMBXNgwVf7YtHht4qOxtotzPf32emBNXwCLcBGAsYHQ/s16000/courseconducted1.jpg" alt="3-5 june" style=" width: 100%; height: 33vh;"/>
+      <table style="width: 100%;">
+        <tr>
+          <th><b style="font-size: 18px; color: #f5b904;">03 - 05 June 2021</b> <br> IPC-A-600 K CIS/CIT</th>
+          <th><b style="font-size: 18px; color: #f5b904;">10 - 14 June 2021</b> <br> IPC-A - 610 H </th>
+          <th><b style="font-size: 18px; color: #f5b904;">15 - 18 June 2021</b> <br> IPC/WHMA-A-620 D CIS/CIT </th>
+        </tr>
+      </table>
+    </div>    
+    </div>
+
+  <div class="left" style="background-color: #f1f1f1; width: 100%; margin-top:30px; padding:40px;">
+    <div >  
+      <h3 class="heading">Indian Member Volunteers part of IPC Global Technical committee</h3>
+  </div>
+
+    <div>  
+      <table style="width: 100%; text-align: center; align-items: center; padding-top: 20px;">
+        <tr>
+          <th style="width: 200px; height: 200px;"><img src="https://1.bp.blogspot.com/-VWuY0djBU0o/YN7GFLrsddI/AAAAAAAAPOk/_oVIz17zzZMAcxSoCbaxSzh8fnNjCx6HQCLcBGAsYHQ/s16000/mslatha.png" alt="ms latha" width="200px" > <figcaption>
+          Ms. Latha MS</figcaption> </th>
+          <th  style="width: 200px; height: 200px;"><img src="https://1.bp.blogspot.com/-LAQ5stJ7jDg/YN7ETmeww4I/AAAAAAAAPOY/FpGObYhFC8UkD4zDBjmJEc4Q9C01_xa1QCLcBGAsYHQ/s16000/mrkannan.png" alt="Mr Kannan" width="200px"><figcaption> Mr. Kannan E</figcaption>  </th>
+        </tr>
+      </table>
+        <p>
+          <b>Ms. Latha MS</b> (Sr. Manager QA) and <b>Mr. Kannan E </b>(Sr. Manager QA) from Kaynes Technology, Mysore are part of IPC-A-610 Global Technical Committee. Ms. Latha is Certified IPC Trainer for IPC 610 and also Certified IPC Specialist for IPC 600. Mr. Kannan E Certified IPC Specialist for IPC 7711/7721 and involved in volunteering for IPC India technical articles.</p>        
+    </div> 
+  </div>
+
+
+
+    </div>
+
+  
+  
+
+
+</div>
+  
+
+ </div>
+
+    </div>
+    </div>
+    
+
+    <div class="right">
+        <img style="float:center;width:100%;height:500;" src="https://1.bp.blogspot.com/-EaeRC7ck1jY/YN6f1Z9TTbI/AAAAAAAAPMY/46usv5xqnm4J4Rg69YsVJkl06jE4DonrwCLcBGAsYHQ/s16000/IPC%25E5%25B9%25BF%25E5%2591%258A2.jpg" alt="JUFENG SOLDER INTERNATIONAL Pvt Ltd.">
+        <img style="margin-top: 20px;float:center;width:100%;height:500;" src="https://1.bp.blogspot.com/-sXGYdMJwg5s/YN6f1yS3_6I/AAAAAAAAPMg/zzsjlXN6imU7_IdrbUorgBQTslXMh4-zgCLcBGAsYHQ/s16000/Micropack-Ad_IPCIndia.jpg" alt="Micropack-Ad_IPCIndia.">
+        <img style="margin-top: 20px; margin-bottom: 20px;  float:center;width:100%;height:500;" src="https://1.bp.blogspot.com/-6NzB-ijoSEU/YN6f1PMuhwI/AAAAAAAAPMU/EgGrweRKZQsSAltfRY7N38-Du2pNqhAhACLcBGAsYHQ/s16000/IPC_India_Staticsystems_Logo.png" alt="IPC_India_Staticsystems_Logo.">
+        <div style="text-align: center">
+            <hr style="border-top: 1px solid #f5b904;">
+        <h3 style="margin-top: 30px; color: #f5b904;text-align: center">MEMBER STORY</h3>
+        <strong style="color: #041c3f; text-align: center;">IPC India Virtual Training Supports Member at UAENIMR Automotive enrolled company wide membership through IPC India</strong>
+        </div>
+
+        <div style="text-align: center; margin: 25px;">
+          <img   src="https://1.bp.blogspot.com/-gSzht_FuN7E/YN6f2Z96GEI/AAAAAAAAPMs/At8RNXMA8cc1YOlW3j16xBIN8yejBGuCgCLcBGAsYHQ/s16000/alin.jpg" alt="alin Image.">
+          <p style="text-align: center; margin-bottom: 30px;"><b>Alin Fifor</b> <br>
+            Sr. Supplier Quality Assurance Engineer <br>
+            Quality of NIMR</p>
+        </div>
+
+        <div style="text-align: center; margin: 30px; padding: 30px;">
+        <a href="https://www.ipcindia.org.in/wp-content/uploads/2021/06/NIMR-Story.jpg" target="blank" class="readmore">
+            <strong>READ MORE</strong>
+          </a>
+        </div>
+          
+        <!-- <h3 style=" margin-top: 60px; color: #f5b904;text-align: left;">TECHNICAL ARTICLE</h3>
+        <p>IPC India publishes technical article/papers of Members in IPC India website. The article highlights science behind the technology and provides valuable information for electronics manufacturing industry. We are thankful to Mr. Kannan. E – HOD Quality Assurance of Kaynes Technology India private limited, Mysore for sharing article on “Importance of Step up stencil”. <br><br> 
+          <div style="text-align: left; padding-top: 25px;">
+            <a href="https://www.ipcindia.org.in/newsletter/wp-content/uploads/2021/05/KCS-Story.pdf" class="readmore">
+              <strong>READ MORE</strong> </a>
+          </div>
+        </p>  -->
+
+        <h3 style=" margin-left: 10px; color: #f5b904;text-align: left;">MEMBER TRAINING FEEDBACKS</h3>
+        <p>Best thing about this interactive session was, trainer is discussing each point of the course and at the end of every session refreshing our knowledge with model question papers every module wise.  Online exam and certification procedure is also quite convenient and fast. This virtual session was equally effective as personnel sessions. Thank you IPC team for coordination and quick IT support as and when require. "  <br><br>
+        <b style="color: #003483 ;">Kushal Panchal</b> <br> 
+          <b style="font-size: 16px; color: rgb(77, 77, 77);">Chief Operating Officer </b><br> 
+        <b style="font-size: 16px; color: rgb(77, 77, 77);">PCB Power Market </b><br> 
+        <hr>
+        <b style="font-size: 16px; color: rgb(77, 77, 77); margin-left: 10px;">Training - IPC-A-600 K CIS/CIT </b><br>
+        <b style="font-size: 16px; color: rgb(77, 77, 77); margin-left: 10px; ">Date - 3rd - 5th june, 2021 </b>
+
+
+        <!-- <div style="text-align: left; padding-top: 30px;">
+          <a href="https://www.ipcindia.org.in/newsletter/wp-content/uploads/2021/05/KCS-Story.pdf" class="readmore">
+            <strong>READ MORE</strong> </a>
+        </div> -->
+        </p> 
+
+
+        <!-- <h3 style=" margin-top: 50px; color: #f5b904;text-align: center;">SALE OF STANDARDS</h3>
+        <table style="width: 100%;">
+          <tr>
+             <td > 
+               <ul>
+                 <li>1</li>
+                 <li>1</li>
+               </ul>
+             </td>
+          </tr>
+        </table> -->
+
+        <div >
+          <table style="background-color: #fff; margin-top: 30px;">
+            <tr>
+              <th><h3 style=" margin: 30px; color: #f5b904;text-align: left; text-transform: uppercase">Choose Right Channel for your Business</h3>
+                <img style="margin: 20px;float:center; width:90%;height:500;" src="https://1.bp.blogspot.com/--zwpF15wU1M/YN6f387VMdI/AAAAAAAAPM8/3AcBtiENhb0l-KtS3mAIryrbnjlqlihmQCLcBGAsYHQ/s16000/reachout1.png" alt="reachout."/></th>
+            </tr>
+            <tr>
+              <th>
+                <p style="color: #00183a; width: 90%; padding-left: 20px; padding-bottom: 20px; font-size: 17px; font-weight: normal; letter-spacing: 0px;">Reach out to Electronics Manufacturing Industry through IPC India<br><br>
+                <b style="color:#f5b904; letter-spacing: 1px;">Connect :</b> &nbsp; <br>
+                <b style="font-size: 22px; color: #ffba00;letter-spacing: .5px; word-spacing: 2px;">MANVI KAPOOR</b> <br><b style="letter-spacing: .5px; word-spacing: 2px;">Marketing Manager</b> - IPC India<br><i>manvikapoor@ipc.org</i><br>+91 9654202207
+                </p></th>
+            </tr>
+            
+
+          </table>
+              
+              <!-- <img style="margin-top: 30px;float:center;width:100%;height:500;" src="reachout1.png" alt="reachout.">
+              <p style="color: #00183a; font-weight: bold;">Reach out to Electronics Manufacturing Industry Verticals through IPC India <br><br>
+              <b style="color:#f5b904 ;">Connect :</b> &nbsp; <i style="color:#003483; font-weight: normal;">manvikapoor@ipc.org</i>
+              </p>
+             -->
+          </div>
+    </div>  
+</div>
+</div>
+</div>
+<!-- * Previous footer* 
+      <img src="ipc-ads-2.jpg" alt="may2021" style="align-items: center; float:center;width:100%;height:100%; margin-bottom: 30px;">     
+      <h1 style="text-align: center; color: #041c3f;">FOLLOW US ON LINKEDIN</h1>
+      <div class="a">
+      <a href="https://www.linkedin.com/company/ipc-india/">
+      <img src="linkedin.png" alt="Linkedin Icon" style="width:40px;height:40px;">
+      </a>
+      </div>
+      
+      <h3 style="text-align: center; color: #041c3f; font-style: italic; margin: 40px;">Positive anything is better than negative nothing – except the Covid 19. Stay home, stay safe & help flatten the curve.</h3>
+-->
+<!-- <table style="width: 100%; background-color: #ffffff;">
+  <tr style="text-align: left; ">
+    <th style="width: 50%;  padding: 60px;">
+      <p style="font-size: 24px; color: #ffba00;">INDUSTRY NEWS</b> </p>
+      <br><br><br>
+      
+      <ul style="text-align: left;">
+      <li> <a id="in" href="https://economictimes.indiatimes.com/industry/cons-products/electronics/chinas-hisense-to-set-up-a-tv-manufacturing-plant-in-india-expand-product-portfolio/articleshow/83400523.cms" target="blank">China's Hisense to set up a TV manufacturing plant in India, expand product portfolio</a></li> <br>
+
+      <li> <a id="in" href="https://manometcurrent.com/electronics-manufacturing-services-for-automobile-industry-market-2021-new-development-and-technology-advancement-jabil-flextronics-hon-hai-foxconn-pegatron-new-kinpo-group-venture-fih-mobile/" target="blank">Electronics Manufacturing Services for Automobile Industry Market 2021 New Development and Technology Advancement- Jabil, Flextronics, Hon Hai/Foxconn, Pegatron, New-Kinpo Group, Venture, FIH Mobile, Plexus, Kaifa, Celestica, Sanmina, SIIX, Zollner Elektronik, Universal Scientific Industrial</a></li><br>
+
+      <li> <a id="in" href="https://telecom.economictimes.indiatimes.com/news/vvdn-sets-up-new-smt-lines-to-support-biz-growth-says-hired-2500-employees-during-pandemic/83424831" target="blank">VVDN sets up new SMT lines to support biz growth; says hired 2,500 employees during pandemic</a></li><br>
+
+      <li> <a id="in" href="https://www.prnewswire.com/news-releases/growing-demand-for-consumer-electronic-devices-fuels-sales-opportunities-in-quantum-dot-sensor-market-tmr-301317382.html" target="blank">Growing Demand for Consumer Electronic Devices Fuels Sales Opportunities in Quantum Dot Sensor Market: TMR</a></li><br>
+
+      <li> <a id="in" href="https://www.reportsgo.com/electronics-manufacturing-services-for-automobile-industry-market-119569" target="blank">Global Electronics Manufacturing Services for Automobile Industry Market 2020 Key Factors and Emerging Opportunities with Current Trends Analysis 2025</a></li><br>
+
+      <li> <a id="in" href="https://www.mccourier.com/telecom-electronic-manufacturing-services-ems-market-disclosing-latest-advancement-2021-to-2027/" target="blank">Telecom Electronic Manufacturing Services (EMS) Market Disclosing Latest Advancement 2021 to 2027</a></li><br>
+
+      <li> <a id="in" href="https://erxnews.com/news/12902/global-electronics-manufacturing-services-ems-market-is-expected-to-see-huge-growth-latest-research-report-forecast-2028/" target="blank">Global Electronics Manufacturing Services (EMS) Market Is Expected To See Huge Growth. Latest Research Report, Forecast 2028</a></li><br>
+
+      <li> <a id="in" href="https://yourstory.com/2021/06/india-potential-to-touch-global-manufacturing-customers-ems-industry-startups/amp" target="blank">Why Sreeram Srinivasan, CEO, Syrma Technology, feels India has the potential to touch global manufacturing customers</a></li><br>
+    </ul></th>
+
+
+     <th style="width: 50%;  padding:0px 60px; background-color: #ddd; ">
+      <p style="font-size: 24px; color: #ffba00;">GLOBAL NEWS</b> </p>
+      <br><br><br>
+      
+      <ul>
+      <li> <a id="in" href="https://economictimes.indiatimes.com/industry/cons-products/electronics/handset-pli-timeline-extension-will-boost-investor-confidence-industry/articleshow/83921416.cms" target="blank">Handset PLI timeline extension will boost investor confidence: Industry</a></li> <br>
+
+      <li> <a id="in" href="https://economictimes.indiatimes.com/industry/cons-products/electronics/handset-industry-may-face-more-supply-crunch-amid-covid-rise-in-china-vietnam-taiwan/articleshow/83231007.cms" target="blank">Handset industry may face more supply crunch amid Covid rise in China, Vietnam, Taiwan</a></li><br>
+
+      <li> <a id="in" href="https://economictimes.indiatimes.com/small-biz/trade/exports/insights/a-forgotten-chipmaker-may-be-key-to-ending-the-global-shortage/articleshow/83769118.cms" target="blank">A forgotten chipmaker may be key to ending the global shortage</a></li><br>
+
+      <li> <a id="in" href="https://emsnow.com/calcuquote-integrates-with-germany-based-stackrate-for-improved-pcb-quoting-experience-for-ems-companies/" target="blank">CalcuQuote Integrates with Germany-based Stackrate for Improved PCB Quoting Experience for EMS Companies</a></li><br>
+
+      <li> <a id="in" href="https://emsnow.com/europlacer-expands-existing-reseller-relationship-with-aegis-software/" target="blank">Europlacer Expands Existing Reseller Relationship with Aegis Software</a></li><br>
+
+      <li> <a id="in" href="https://emsnow.com/electric-vehicles-far-from-killing-oil-refining-in-mexico/" target="blank">Electric vehicles, far from ‘killing’ oil refining in Mexico</a></li><br>
+
+      <li> <a id="in" href="https://emsnow.com/semi-supports-introduction-of-fabs-act-in-u-s-senate-to-spur-semiconductor-manufacturing-growth/" target="blank">SEMI Supports Introduction of FABS Act in U.S. Senate to Spur Semiconductor Manufacturing Growth</a></li><br>
+
+    </ul></th>
+  </tr>
+</table> -->
+
+    
+<div class="left" style="margin-top: 30px; padding-left: 50px;" >
+  <h3 style="font-size: 24px; color: #f5b904;">INDUSTRY NEWS</h3>
+</div>
+  <div style="padding: 40px;">
+    <table style="width: 100%; padding-left: 30px;">
+      <tr>
+         <td > 
+           <ul>
+             <li> <a id="in" href="https://economictimes.indiatimes.com/industry/cons-products/electronics/chinas-hisense-to-set-up-a-tv-manufacturing-plant-in-india-expand-product-portfolio/articleshow/83400523.cms" target="blank">China's Hisense to set up a TV manufacturing plant in India, expand product portfolio</a></li> <br>
+
+             <li> <a id="in" href="https://manometcurrent.com/electronics-manufacturing-services-for-automobile-industry-market-2021-new-development-and-technology-advancement-jabil-flextronics-hon-hai-foxconn-pegatron-new-kinpo-group-venture-fih-mobile/" target="blank">Electronics Manufacturing Services for Automobile Industry Market 2021 New Development and Technology Advancement- Jabil, Flextronics, Hon Hai/Foxconn, Pegatron, New-Kinpo Group, Venture, FIH Mobile, Plexus, Kaifa, Celestica, Sanmina, SIIX, Zollner Elektronik, Universal Scientific Industrial</a></li><br>
+
+             <li> <a id="in" href="https://telecom.economictimes.indiatimes.com/news/vvdn-sets-up-new-smt-lines-to-support-biz-growth-says-hired-2500-employees-during-pandemic/83424831" target="blank">VVDN sets up new SMT lines to support biz growth; says hired 2,500 employees during pandemic</a></li><br>
+
+             <li> <a id="in" href="https://www.prnewswire.com/news-releases/growing-demand-for-consumer-electronic-devices-fuels-sales-opportunities-in-quantum-dot-sensor-market-tmr-301317382.html" target="blank">Growing Demand for Consumer Electronic Devices Fuels Sales Opportunities in Quantum Dot Sensor Market: TMR</a></li><br>
+
+             <li> <a id="in" href="https://www.reportsgo.com/electronics-manufacturing-services-for-automobile-industry-market-119569" target="blank">Global Electronics Manufacturing Services for Automobile Industry Market 2020 Key Factors and Emerging Opportunities with Current Trends Analysis 2025</a></li><br>
+
+             <li> <a id="in" href="https://www.mccourier.com/telecom-electronic-manufacturing-services-ems-market-disclosing-latest-advancement-2021-to-2027/" target="blank">Telecom Electronic Manufacturing Services (EMS) Market Disclosing Latest Advancement 2021 to 2027</a></li><br>
+
+             <li> <a id="in" href="https://erxnews.com/news/12902/global-electronics-manufacturing-services-ems-market-is-expected-to-see-huge-growth-latest-research-report-forecast-2028/" target="blank">Global Electronics Manufacturing Services (EMS) Market Is Expected To See Huge Growth. Latest Research Report, Forecast 2028</a></li><br>
+
+             <li> <a id="in" href="https://yourstory.com/2021/06/india-potential-to-touch-global-manufacturing-customers-ems-industry-startups/amp" target="blank">Why Sreeram Srinivasan, CEO, Syrma Technology, feels India has the potential to touch global manufacturing customers</a></li><br>
+
+             <li> <a id="in" href="https://economictimes.indiatimes.com/industry/cons-products/electronics/handset-pli-timeline-extension-will-boost-investor-confidence-industry/articleshow/83921416.cms" target="blank">Handset PLI timeline extension will boost investor confidence: Industry</a></li> <br>
+
+             <li> <a id="in" href="https://economictimes.indiatimes.com/industry/cons-products/electronics/handset-industry-may-face-more-supply-crunch-amid-covid-rise-in-china-vietnam-taiwan/articleshow/83231007.cms" target="blank">Handset industry may face more supply crunch amid Covid rise in China, Vietnam, Taiwan</a></li><br>
+
+           </ul>
+         </td>
+      </tr>
+    </table>  
+ </div>
+
+
+   
+ <div style="background-color: #f1f1f1; padding: 30px; margin-top: 30px;">
+  <div class="left" style="background-color: #f1f1f1;" >
+    <h3 style="font-size: 24px; color: #f5b904;">GLOBAL NEWS</h3>
+  </div>
+
+  <div style="padding: 40px;">
+    <table style="width: 100%;">
+      <tr>
+         <td > 
+           <ul>
+
+             <li> <a id="in" href="https://economictimes.indiatimes.com/small-biz/trade/exports/insights/a-forgotten-chipmaker-may-be-key-to-ending-the-global-shortage/articleshow/83769118.cms" target="blank">A forgotten chipmaker may be key to ending the global shortage</a></li><br>
+
+             <li> <a id="in" href="https://emsnow.com/calcuquote-integrates-with-germany-based-stackrate-for-improved-pcb-quoting-experience-for-ems-companies/" target="blank">CalcuQuote Integrates with Germany-based Stackrate for Improved PCB Quoting Experience for EMS Companies</a></li><br>
+
+             <li> <a id="in" href="https://emsnow.com/europlacer-expands-existing-reseller-relationship-with-aegis-software/" target="blank">Europlacer Expands Existing Reseller Relationship with Aegis Software</a></li><br>
+
+             <li> <a id="in" href="https://emsnow.com/electric-vehicles-far-from-killing-oil-refining-in-mexico/" target="blank">Electric vehicles, far from ‘killing’ oil refining in Mexico</a></li><br>
+
+             <li> <a id="in" href="https://emsnow.com/semi-supports-introduction-of-fabs-act-in-u-s-senate-to-spur-semiconductor-manufacturing-growth/" target="blank">SEMI Supports Introduction of FABS Act in U.S. Senate to Spur Semiconductor Manufacturing Growth</a></li><br>
+
+           </ul>
+         </td>
+      </tr>
+    </table>  
+  </div>
+
+</div>
+
+
+<div style="background-color: #fff; padding: 0px; margin-top: 30px;">
+  <div class="left" style="background-color: #fff;" >
+    <h3 style="margin-left: 20px; font-size: 24px; color: #f5b904;">MEMBERSHIPS DURING JUNE</h3>
+  </div>
+
+  <div style="padding: 40px; margin-left: 20px;">
+    <table style="width: 100%; align-items: left; text-align: left;">
+      <tr>
+        <th style="text-align: center; align-items: center;"> <img src="https://1.bp.blogspot.com/-3jSqHYolprs/YN6n6rIQM4I/AAAAAAAAPNc/1ngohqkFz14TLwca-O4g46KRriNCrIgrQCLcBGAsYHQ/s16000/PROINNOVATIVETECHNOLOGIESPVT.png" alt="PRO INNOVATIVE TECHNOLOGIES PVT. LTD." style="width: 160px; height: 160px;">  </th>
+        <th style="text-align: center; align-items: center;"> <img src="https://1.bp.blogspot.com/-pNzKJi5PYZQ/YN6n73UKzGI/AAAAAAAAPNs/N-zYnL_V2ZwKnlt5RReS2u16VVghHG42gCLcBGAsYHQ/s16000/THERMOCABLESLIMITED.png" alt="THERMO CABLES LIMITED" style="width: 160px; height: 160px;">  </th>
+        <th style="text-align: center; align-items: center;"> <img src="https://1.bp.blogspot.com/-edR3F1M0oxo/YN6n69j1oRI/AAAAAAAAPNk/MUDpsgeKI4UjK-0EmJ1DbuzUJNuOQV3PACLcBGAsYHQ/s16000/NventElectricalProductsIndiaPvtLtd.png" alt="Nvent Electrical Products India Pvt Ltd" style="width: 160px; height: 160px;">  </th>
+        <th style="text-align: center; align-items: center;"> <img src="https://1.bp.blogspot.com/-meR5HLB2mcg/YN6n7imqKEI/AAAAAAAAPNo/mp9lDJFEdZkh5WQmTSV9Z_YBD63cnNJpACLcBGAsYHQ/s16000/SPCInternational%2528India%2529PvtLtd.png" alt="SPC International (India) Pvt Ltd" style="width: 160px; height: 160px;">  </th>
+        <th style="text-align: center; align-items: center;"> <img src="https://1.bp.blogspot.com/-LD99VIuqHa8/YN6n65BE5RI/AAAAAAAAPNg/LSj5cxPr3M84zNThH95PE7I1PTmCeLtTgCLcBGAsYHQ/s16000/AstiElectronicsIndiaPvtLtd.png" alt="Asti Electronics India Pvt Ltd" style="width: 200px; height: 200px;">  </th> <br>
+      </tr>
+      <tr style="font-size: 14px; text-align: center; align-items: center;">
+      <th> Pro Innovative Technologies Pvt Ltd</th>
+      <th> Thermo Cables Limited  </th>
+      <th> Nvent Electrical Products India Pvt Ltd  </th>
+      <th> SPC International (India) Pvt Ltd  </th>
+      <th> Asti Electronics India Pvt Ltd </th> <br>
+    </tr>
+    </table>  
+  </div>
+
+</div>
+
+<!-- *SALE OF STANDARDS*  -->
+<div style="background-color: #f1f1f1; padding: 30px; margin-top: 30px;">
+  <div class="left" style="background-color: #f1f1f1;" >
+    <h3 style=" font-size: 24px; color: #f5b904;">SALE OF STANDARDS</h3>
+  </div>
+  <div style="padding: 40px;">
+    <table style="width: 100%;">
+      <tr>
+         <td > 
+           <ul style="font-weight: bold; color: #041c3f; padding: 10px;">
+             <li> Adtech Inventions Pvt Ltd</li> <br>
+             <li> Schneider Electric IT Business India Pvt Ltd</li>  <br>
+           </ul>
+         </td>
+        <td > 
+          <ul style="font-weight: bold; color: #041c3f;  padding: 10px;">
+            <li> Varroc Engineering Ltd</li>  <br>
+            <li> Trasscon Interconnection Systems Pvt Ltd</li>  <br>
+          </ul>
+        </td>
+      <td > 
+        <ul style="font-weight: bold; color: #041c3f;  padding: 10px;">
+          <li> SGS Tekniks Manufacturing Pvt Ltd</li>  <br>
+        </ul>
+      </td>
+    </table>  
+  </div>
+</div>
+
+
+
+</body>
+<footer style="padding: 40px; background-color: #00183a;">
+  <h1 ></h1>
+
+  <table style="width: 100%;">
+    <tr style="text-align: center;">
+      <th style=" color: #fff; font-size: 36px; text-align: center; align-items: center; letter-spacing: 2px; word-spacing: 5px; ">PLEASE CONNECT TO IPC INDIA</th>
+    </tr>
+  </table>
+  <!-- <table style="width: 100%;">
+    <tr style="text-align: center;">
+      <th style="text-align: center; align-items: center;">  <img src="Abhishekupadhyayipc.jpg" alt="Abhishek Upadhyay" width="200" height="200"/></th>
+      <th style="text-align: center; align-items: center;">  <img src="vittalipc.jpg" alt="vittalipc" width="200" height="200"/></th>
+      <th style="text-align: center; align-items: center;">  <img src="Prabhuipc.jpg" alt="Prabhuipc" width="200" height="200"/></th>
+      <th style="text-align: center; align-items: center;">  <img src="manvikapooripc.jpg" alt="manvikapooripc" width="200" height="200"/></th>
+    </tr>
+  </table> -->
+  <table style="width: 100%; ">
+    <tr style="text-align: center; ">
+      <th style="text-align: center; align-items: center; padding-left: 7%;">  <p style="text-align: center; color: #fff; font-size: 12px; font-weight: normal; letter-spacing: 1px;"><b style="font-size: 22px; color: #ffba00;">ABHISHEK UPADHYAY</b> <br><b>Regional Manager </b>- North & East India<br>abhishekupadhyay@ipc.org<br>+91 9313224509</p></th>
+
+      <th style="text-align: center; align-items: center;  padding-left: 7%;">  <p style="text-align: center; color: #fff;font-size: 12px; font-weight: normal; letter-spacing: 1px;"><b style="font-size: 22px; color: #ffba00;">VITTAL VATAR</b> <br><b>Regional Manager</b> - South India & Srilanka <br>vittalvatar@ipc.org<br>+91 7338466577</p></th>
+
+      <th style="text-align: center; align-items: center;  padding-left: 5%;">  <p style="text-align: center; color: #fff; font-size: 12px; font-weight: normal; letter-spacing: 1px;"><b style="font-size: 22px; color: #ffba00;">PRABHU VETRI</b> <br><b>Deputy Regional Manager</b> - West India<br>prabhuv@ipc.org<br>+91 7338466580</p></th>
+
+      <!-- <th style="text-align: center; align-items: center;">  <p style="text-align: center; color: #fff; font-size: 12px; font-weight: normal; letter-spacing: 1px;"><b style="font-size: 22px; color: #ffba00;">MANVI KAPOOR</b> <br><b>Marketing Manager </b>- IPC india<br>manvikapoor@ipc.org<br>+91 9313224509</p></th> -->
+    </tr>
+  </table>
+
+
+  <table style="width: 100%; margin-top: 20px;">
+    <tr style="text-align: center;">
+      <th style=" color: #fff; font-size: 24px; text-align: center; align-items: center; letter-spacing: 2px; margin-top: 60px;">FOLLOW US ON LINKEDIN</th>
+    </tr>
+    <tr>
+      <td> <div class="a" style="margin-top: 10px;">
+        <a href="https://www.linkedin.com/company/ipc-india/">
+        <img src="https://1.bp.blogspot.com/-Cyb0TUxO_Eg/YN6f3KPwSHI/AAAAAAAAPM0/F077A7OjmrEwo4eDJbRf98rGYmBx8zQrACLcBGAsYHQ/s16000/linkedin.png" alt="Linkedin Icon" style="width:28px;height:28px;">
+        </a>   
+        </div>
+      </td>
+
+        
+    </tr>
+    
+    <!-- <tr>
+      <td><h3 style="text-align: center; color: #041c3f; font-style: italic; margin: 40px;">Positive anything is better than negative nothing – except the Covid 19. Stay home, stay safe & help flatten the curve.</h3></td>
+    </tr> -->
+    
+  </table>
+ 
+
+</footer>
+</html>
